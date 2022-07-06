@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        body{
+            background: #ccc;
+        }
+        header{
+            height: 100px;
+            background: #000;
+        }
+        main{
+            width: 800px;
+            margin: 10px auto;
+            /* m0-a */
+        }
+        .box1{
+            height: 200px;
+            background: #fff;
+        }
+        .box2{
+            overflow:hidden;
+            margin-top: 10px;
+        }
+        .box2 div{float: left;
+            width: calc((100% - 20px) / 3);
+            height: 100px;
+            background: #f00;
+            margin-right: 10px;
+        }
+        .box2 div:last-child{
+            margin-right: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        header
+    </header>
+    <main>
+        <div class="box1">box1</div>
+        <div class="box2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </div>
+
+        <style>
+            .box3{
+                overflow: hidden;
+                margin-top: 10px;
+            }
+            .box3 div{
+                float: left;
+                width:calc((100% - 40px) / 5);
+                background: #fff;
+                margin-right: 10px;
+                height: 100px;
+            }
+            .box3 div:last-child{
+                margin-right: 0;
+            }
+        </style>
+
+        <div class="box3">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>3</div>
+            <div>3</div>
+        </div>
+
+        <style>
+            .box4{overflow: hidden;
+                background: #fff;
+                padding: 10px;
+                margin-top: 10px;
+            }
+            .box4 div{float: left;
+                width:calc(50% - 5px);
+                height: 100px;
+                background: #f00;}
+            .box4 div:last-child{float: right;}
+        </style>
+
+        <div class="box4">
+            <div>1</div>
+            <div>2</div>
+        </div>
+    </main>
+</body>
+</html>

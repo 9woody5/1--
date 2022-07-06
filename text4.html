@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;
+        font:inherit}
+        body{line-height: 1;}
+        ul{list-style: none;}
+        a{text-decoration: none; color: inherit;}
+        img{
+            vertical-align: top;
+            max-width: 100%;
+        }
+        header{}
+        header .top{
+            background: #888;
+            height: 300px;
+            position: relative;
+        }
+
+        header h1{
+            position: absolute;
+            top: 50%;left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px; height: 50px;
+            background: #fff;
+        }
+        header h1 a{
+            display: block;
+            height: 100%;
+        }
+
+        header .sns{float: left;}
+        header .login{float: right;}
+
+        header .bottom{
+            background: #f00;
+            text-align: center;
+        }
+        header .bottom ul{
+            overflow: hidden; 
+            background: #ccc;
+            display: inline-block;
+            /* ul을 텍스트화해서 center 정렬 */
+            vertical-align: top;
+            /* inline-block 하단 여백 삭제 필수 */
+            line-height: 50px
+        }
+        header .bottom ul li{float: left; padding: 0 10px;}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top">
+            <h1><a href="">네이버</a></h1>
+            <div class="sns">@</div>
+            <div class="login">@</div>
+        </div>
+        <div class="bottom">
+            <!-- ul>li*4>a{메뉴$} -->
+            <ul>
+                <li><a href="">메뉴1</a></li>
+                <li><a href="">메뉴2</a></li>
+                <li><a href="">메뉴3</a></li>
+                <li><a href="">메뉴4</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <style>
+        main{
+            width: 800px;
+            margin: 10px auto;
+        }
+        .sc-top{
+            background: #ccc;
+            padding: 10px;
+        }
+        .sc-top .top{
+            height: 200px;
+            background: #fff;
+            margin-bottom: 10px;
+        }
+        .sc-top .bottom{
+            background: #fff;
+            padding: 10px;
+            overflow: hidden;
+        }
+        .sc-top .left{
+            float: left;
+            width:calc(100% - 160px);
+            /* background: #f00; */
+        }
+        .sc-top .left li{
+            float: left;
+            width:calc((100% - 20px) / 3);
+            background: #00f;
+            height: 100px;
+            margin-right: 10px;
+        }
+        .sc-top .left li:nth-child(3n){
+            margin-right: 0;
+        }
+        /* -n+4 이하 */
+        .sc-top .left li:nth-child(n+4){
+            margin-top: 10px;
+        }
+        .sc-top .right{
+            float: right;
+            width: 150px;
+            height: 210px;
+            background: #f00;
+        }
+
+    </style>
+
+    <main>
+        <section class="sc-top">
+            <div class="top">top</div>
+            <div class="bottom">
+                <ul class="left">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                </ul>
+                <div class="right">right</div>
+            </div>
+        </section>
+
+        <style>
+            .sc-bottom{
+                background: #ccc;
+                padding: 10px; 
+                margin-top: 10px;
+            }
+            .sc-bottom ul{}
+            .sc-bottom ul li{}
+            .sc-bottom ul li+li{
+                margin-top: 10px;
+            }
+            /* a 태그에 꼭 display:block 적용 */
+            .sc-bottom ul li a{
+                display: block;
+            }
+            /* 왼쪽 이미지에만 widht값 주고 float:left 적용 */
+            .sc-bottom ul li img{
+                width: 150px;height: 150px;
+                float: left;
+                margin-right: 10px;
+
+            }
+            /* float 적용된 다음 태그에 overflow:hidden 주기 */
+            .sc-bottom ul li p{
+                height: 150px; background: #fff;
+                overflow: hidden;
+            }
+
+
+        </style>
+
+        <section class="sc-bottom">
+            <!-- ul>li*4>a>img[src="./img.jpg"]+p{내용} -->
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./img.jpg" alt="">
+                        <p>내용</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img.jpg" alt="">
+                        <p>내용</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img.jpg" alt="">
+                        <p>내용</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img.jpg" alt="">
+                        <p>내용</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer>footer</footer>
+</body>
+</html>

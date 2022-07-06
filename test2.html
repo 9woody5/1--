@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        body{
+            background: #ccc;
+        }
+        header{
+            /* 사또1 정의 */
+            /* fixed는 높이 기준이 브라우저,
+            인라인 요소에 너비값 줄 수 있음 */
+            position: fixed;
+            top: 0;left: 0;
+            width: 150px;
+            height: 100%;
+            /* 부모한테 높이 값이 있어야 100%적용 가능, 부모의 부모는 적용 안됨 */
+            background: #000;
+            color: #fff;
+        }
+        main{margin: 10px 10px 10px 160px;}
+        main > div{margin-bottom: 10px;}
+        .box1{
+            height: 200px;
+            background: #f00;
+        }
+        .box2{overflow: hidden;}
+        .box2 div{
+            float: left;
+            width:calc(50% - 5px);
+            background: #f000f0;
+            height: 200px;    
+        }
+        .box2 div:last-child{float: right;}
+        .box3{
+            height: 200px;
+            background: #f00;
+        }
+        .box4{
+            height: 200px;
+            background: #f00;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <main>
+        <div class="box1">box1</div>
+        <div class="box2">
+            <div>50% - 5px</div>
+            <div>50% - 5px</div>
+        </div>
+        <div class="box3">box3</div>
+        <div class="box4">box4</div>
+
+        <style>
+            .box5{overflow: hidden;}
+            .box5 div{
+                float: left;
+                width:calc(80% - 5px);
+                height: 200px;
+                background: #f00;
+            }
+            .box5 div:last-child{
+                float: right;
+                width:calc(20% - 5px);
+            }
+            .box6{overflow: hidden;}
+            .box6 div{
+                float: left;
+                width:calc(30% - 5px);
+                height: 200px;
+                background: #f00;
+            }
+            .box6 div:last-child{
+                float: right;
+                width:calc(70% - 5px);
+            }
+        </style>
+
+        <div class="box5">
+            <div>80% - 5px</div>
+            <div>20% - 5px</div>
+        </div>
+        <div class="box6">
+            <div>30% - 5px</div>
+            <div>70% - 5px</div>
+        </div>
+    </main>
+</body>
+</html>
