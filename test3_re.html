@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0; font: inherit;}
+        body{line-height: 1;}
+        ul{list-style: none;}
+        a{text-decoration: none; color: inherit;}
+        img{vertical-align: top; max-width: 100%;}
+        /* 초기화 완료 */
+        header{
+            background: #ccc;
+            height: 100px;
+            position: relative;
+            border-bottom: 2px solid #000;
+        }
+        header h1{
+            position: absolute;
+            top: 50%;left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100px;height: 50px;
+            background: orange;
+            text-align: center;
+            line-height: 50px;
+        }
+        header h1 a{
+            height: 100%;
+            display: block;
+        }
+        header .sns{
+            position: absolute;
+            top: 0; left: 0;
+        }
+        header .login{
+            position: absolute;
+            top: 0; right: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="">로고</a></h1>
+        <div class="sns">@</div>
+        <div class="login">@</div>
+    </header>
+
+    <style>
+        .box1{
+            background: #ddd;
+            height: 300px;
+            position: relative;
+        }
+        .box1 .btn{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 50px;
+            height: 50px;
+            background: green;
+        }
+        .box1 .btn.prev{left: 10px;}
+        .box1 .btn.next{right: 10px;}
+        .box1 .pagination{
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .box1 .pagination span{
+            width: 30px; height: 30px;
+            background: lightgreen;
+            border-radius: 50%;
+            float: left;
+            margin: 0 10px;
+
+        }
+        .box1 .pagination span.active{
+            background: #f00;
+        }
+    </style>
+
+    <main>
+        <section class="box1">
+            <a href="" class="btn prev">prev</a>
+            <a href="" class="btn next">next</a>
+            <div class="pagination">
+                <span class="active">1</span>
+                <span>2</span>
+                <span>3</span>
+            </div>
+        </section>
+
+        <style>
+            .box2{margin: 100px 0;}
+            .box2 h2{
+                font-size: 30px;
+                font-weight: bold;
+                text-align: center;
+                margin-bottom: 100px;
+            }
+            .box2 ul{
+                width: 800px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+            .box2 ul li{
+                width: calc((100% - 20px) / 3);
+                float: left;
+                margin-right: 10px;
+            }
+            .box2 ul li:last-child{
+                margin-right: 0;
+            }
+            .box2 ul li a{
+                padding: 10px;
+                background: yellowgreen;
+                display: block;
+
+            }
+            .box2 ul li a img{
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+            }
+            .box2 ul li a p{
+                padding: 10px;
+                background: #fff;
+                margin-top: 10px;
+            }
+        </style>
+
+        <section class="box2">
+            <h2>영역에 대한 제목은 h2</h2>
+            <ul>
+                <li>
+                    <a href="">
+                        <img src="./img.jpg" alt="">
+                        <p>문장 단락 내용 태그</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img.jpg" alt="">
+                        <p>문장 단락 내용 태그</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="./img.jpg" alt="">
+                        <p>문장 단락 내용 태그</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <style>
+            .box3{
+                background: blue;
+                padding: 50px;
+            }
+            .box3 ul{
+                width: 800px;
+                margin: 0 auto;
+            }
+            .box3 ul li{
+                background: #fff;
+                height: 100px;
+            }
+            .box3 ul li+li{
+                margin-top: 10px;
+            }
+        </style>
+
+        <section class="box3">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>
