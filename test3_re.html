@@ -11,19 +11,17 @@
         ul{list-style: none;}
         a{text-decoration: none; color: inherit;}
         img{vertical-align: top; max-width: 100%;}
-        /* 초기화 완료 */
         header{
-            background: #ccc;
-            height: 100px;
             position: relative;
-            border-bottom: 2px solid #000;
+            background: #999;
+            height: 150px;
         }
         header h1{
             position: absolute;
-            top: 50%;left: 50%;
+            top: 50%; left: 50%;
             transform: translate(-50%, -50%);
-            width: 100px;height: 50px;
-            background: orange;
+            width: 100px; height: 50px;
+            background: #fff;
             text-align: center;
             line-height: 50px;
         }
@@ -33,7 +31,7 @@
         }
         header .sns{
             position: absolute;
-            top: 0; left: 0;
+            top: 0;left: 0;
         }
         header .login{
             position: absolute;
@@ -50,7 +48,7 @@
 
     <style>
         .box1{
-            background: #ddd;
+            background: rgb(255, 188, 188);
             height: 300px;
             position: relative;
         }
@@ -58,28 +56,26 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            width: 50px;
-            height: 50px;
-            background: green;
+            width: 40px; height: 40px;
+            background: #f77;
         }
         .box1 .btn.prev{left: 10px;}
         .box1 .btn.next{right: 10px;}
-        .box1 .pagination{
+        .box1 div{
             position: absolute;
             bottom: 10px;
             left: 50%;
             transform: translateX(-50%);
         }
-        .box1 .pagination span{
-            width: 30px; height: 30px;
-            background: lightgreen;
+        .box1 div span{
+            background: #f55;
             border-radius: 50%;
+            width: 30px; height: 30px;
             float: left;
             margin: 0 10px;
-
         }
-        .box1 .pagination span.active{
-            background: #f00;
+        .box1 div span.active{
+            background: #ff0;
         }
     </style>
 
@@ -97,38 +93,37 @@
         <style>
             .box2{margin: 100px 0;}
             .box2 h2{
-                font-size: 30px;
+                font-size: 40px;
                 font-weight: bold;
                 text-align: center;
                 margin-bottom: 100px;
             }
             .box2 ul{
                 width: 800px;
-                margin: 0 auto;
                 overflow: hidden;
+                margin: 0 auto;
             }
             .box2 ul li{
-                width: calc((100% - 20px) / 3);
                 float: left;
+                width:calc((100% - 20px) / 3);
                 margin-right: 10px;
             }
             .box2 ul li:last-child{
                 margin-right: 0;
             }
             .box2 ul li a{
-                padding: 10px;
-                background: yellowgreen;
+                background: orange;
                 display: block;
-
+                padding: 10px;
             }
-            .box2 ul li a img{
+            .box2 ul li img{
                 width: 100%;
                 height: 300px;
                 object-fit: cover;
             }
-            .box2 ul li a p{
-                padding: 10px;
+            .box2 ul li p{
                 background: #fff;
+                padding: 10px;
                 margin-top: 10px;
             }
         </style>
@@ -159,8 +154,8 @@
 
         <style>
             .box3{
-                background: blue;
-                padding: 50px;
+                background: #fc3;
+                padding: 100px 0;
             }
             .box3 ul{
                 width: 800px;
