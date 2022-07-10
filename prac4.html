@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{margin: 0;padding: 0;}
-        body{line-height: 1; font: inherit;}
+        *{margin: 0;padding: 0; font: inherit;}
+        body{line-height: 1;}
         ul{list-style: none;}
         a{text-decoration: none; color: inherit;}
         img{vertical-align: top; max-width: 100%;}
         header{}
         header .top{
-            background: #ccc;
             height: 300px;
+            background: #888;
             position: relative;
         }
         header h1{
             position: absolute;
+            width: 100px; height: 50px;
             top: 50%; left: 50%;
             transform: translate(-50%, -50%);
-            width: 100px; height: 50px;
             background: #fff;
         }
         header h1 a{
@@ -30,30 +30,29 @@
         }
         header .sns{
             position: absolute;
-            top: 0;left: 0;
+            top: 0; left: 0;
         }
         header .login{
             position: absolute;
             top: 0; right: 0;
         }
         header .bottom{
-            background: #ff8;
+            background: #ddd;
             text-align: center;
         }
         header .bottom ul{
             overflow: hidden;
+            line-height: 50px;
             display: inline-block;
-            background: #fff;
             vertical-align: top;
         }
         header .bottom ul li{
-            margin: 0 10px;
-            line-height: 50px;
+            background: #fff;
             float: left;
         }
         header .bottom ul li a{
-            padding: 0 10px;
             display: block;
+            padding: 0 10px;
         }
     </style>
 </head>
@@ -75,33 +74,34 @@
     </header>
     <style>
         main{
-            width: 800px;
-            margin: 10px auto;
-        }
+            width: 800px; 
+            margin: 0 auto;}
         .sc-top{
-            background: #ddd;
             padding: 10px;
+            background: #ccc;
+            margin: 10px 0;
         }
         .sc-top .top{
+            padding: 10px;
             background: #fff;
             height: 200px;
             margin-bottom: 10px;
         }
         .sc-top .bottom{
+            padding: 10px;
             background: #fff;
             overflow: hidden;
-            padding: 10px;
         }
         .sc-top .left{
-            float: left;
             width:calc(100% - 160px);
+            float: left;
         }
         .sc-top .left li{
             width:calc((100% - 20px) / 3);
-            background: #ff6;
-            margin-right: 10px;
+            background: #888;
             height: 100px;
             float: left;
+            margin-right: 10px;
         }
         .sc-top .left li:nth-child(3n){
             margin-right: 0;
@@ -111,9 +111,9 @@
         }
         .sc-top .right{
             float: right;
-            width: 150px;
             height: 210px;
-            background: #e33
+            width: 150px;
+            background: #ddd;
         }
     </style>
     <main>
@@ -133,9 +133,9 @@
         </section>
         <style>
             .sc-bottom{
-                margin-top: 10px;
+                background: #999;
                 padding: 10px;
-                background: #ddd;
+                margin-bottom: 10px;
             }
             .sc-bottom ul{}
             .sc-bottom ul li{}
@@ -143,56 +143,52 @@
                 margin-top: 10px;
             }
             .sc-bottom ul li a{
-                display: block;
+                background: #ddd;
             }
             .sc-bottom ul li img{
                 width: 150px; height: 150px;
-                margin-right: 10px;
                 object-fit: cover;
                 float: left;
+                margin-right: 10px;
             }
             .sc-bottom ul li p{
                 overflow: hidden;
-                background: #fff;
                 height: 150px;
+                background: #fff;
             }
-            footer{ height: 150px; background: #ddd;}
+            footer{height: 150px; background: #ddd;}
         </style>
         <section class="sc-bottom">
             <ul>
                 <li>
                     <a href="">
                         <img src="./img.jpg" alt="">
-                            <p>내용</p>
-                        </img>
+                        <p>내용</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <img src="./img.jpg" alt="">
-                            <p>내용</p>
-                        </img>
+                        <p>내용</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <img src="./img.jpg" alt="">
-                            <p>내용</p>
-                        </img>
+                        <p>내용</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
                         <img src="./img.jpg" alt="">
-                            <p>내용</p>
-                        </img>
+                        <p>내용</p>
                     </a>
                 </li>
             </ul>
         </section>
     </main>
     <footer>
-
+        footer
     </footer>
 </body>
 </html>
