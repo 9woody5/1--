@@ -13,29 +13,33 @@
         img{vertical-align: top; max-width: 100%;}
         header{height: 100px; background: #000; color: #fff;}
         main{}
-        .inner{width: 800px; margin: 0 auto;}
-        .inner .box1{overflow: hidden; margin-top: 10px;}
-        .inner .box1 div{
-            background: #ddd;
-            float: left;
-            width:calc(50% - 5px);
-            height: 300px;
+        .inner{
+            width: 800px;
+            margin: 0 auto;
         }
-        .inner .box1 .slide{float: right; position: relative;}
+        .inner .box1{overflow: hidden;}
+        .inner .box1 div{
+            margin: 10px 0;
+            float: left;
+            background: #ddd;
+            width:calc(50% - 5px);
+            height: 200px;
+        }
+        .inner .box1 .slide{
+            float: right;
+            position: relative;
+        }
         .inner .box1 .slide .btn{
-            width: 50px; height: 100px;
-            background: #fff;
             position: absolute;
+            background: #fff;
+            width: 30px;
+            height: 50px;
             top: 50%;
             transform: translateY(-50%);
         }
-        .inner .box1 .slide .btn.left{
-            left: 10px;
-        }
-        .inner .box1 .slide .btn.right{
-            right: 10px;
-        }
-        .banner{height: 150px; background: #ff8; margin: 10px 0;}
+        .inner .box1 .slide .btn.left{left: 10px;}
+        .inner .box1 .slide .btn.right{right: 10px;}
+        .banner{height: 120px; background: #c77;}
     </style>
 </head>
 <body>
@@ -46,7 +50,7 @@
         <div class="inner">
             <section class="box1">
                 <div>left</div>
-                <div class="slide"s>right
+                <div class="slide">right
                     <a href="" class="btn left"></a>
                     <a href="" class="btn right"></a>
                 </div>
@@ -57,21 +61,22 @@
             .box2{
                 padding: 10px;
                 background: #000;
+                margin: 10px auto;
             }
             .box2 .list1{
                 padding: 10px;
                 background: #fff;
             }
-            .box2 .list1 .first{
+            .box2 .list1 .left{
+                background: #e33;
                 width:calc(80% - 5px);
-                background: #f88;
                 height: 100px;
                 float: left;
                 margin-right: 10px;
             }
-            .box2 .list1 .last{
+            .box2 .list1 .right{
+                background: #e33;
                 width:calc(20% - 5px);
-                background: #f88;
                 height: 100px;
                 overflow: hidden;
             }
@@ -80,55 +85,54 @@
                 background: #fff;
                 padding-top: 0;
             }
-            .box2 .list2 .first{
+            .box2 .list2 .left{
                 width:calc(40% - 5px);
-                background: #f44;
-                height: 150px;
+                background: #d34;
+                height: 100px;
                 float: left;
                 margin-right: 10px;
             }
-            .box2 .list2 .last{
+            .box2 .list2 .right{
                 overflow: hidden;
                 width:calc(60% - 5px);
-                background: #f22;
-                height: 150px;
+                background: #d34;
+                height: 100px;
             }
         </style>
         <div class="inner">
             <section class="box2">
                 <div class="list1">
-                    <div class="first"></div>
-                    <div class="last"></div>
+                    <div class="left"></div>
+                    <div class="right"></div>
                 </div>
                 <div class="list2">
-                    <div class="first"></div>
-                    <div class="last"></div>
+                    <div class="left"></div>
+                    <div class="right"></div>
                 </div>
             </section>
             <style>
                 .box3{
-                    background: #f82;
-                    margin: 10px 0;
+                    background: #ddd;
                     padding: 10px;
+                    margin-bottom: 10px;
                     overflow: hidden;
                 }
                 .box3 .title{
-                    line-height: 40px;
                     float: left;
+                    line-height: 40px;
                 }
                 .box3 .navi{
                     float: right;
                 }
                 .box3 .navi a{
-                    display: block;
+                    width: 40px; height: 40px;
                     background: #fff;
-                    width: 40px;
-                    height: 40px;
+                    display: block;
                     float: left;
                 }
             </style>
             <section class="box3">
-                    <a href="" class="title">공지사항</a>
+                <a href="" class="title">공지사항</a>
                     <div class="navi">
                         <a href="">이전</a>
                         <a href="">다음</a>
@@ -136,37 +140,40 @@
             </section>
             <style>
                 .box4{}
-                .box4 ul{overflow: hidden;}
+                .box4 ul{
+                    overflow: hidden;
+                }
                 .box4 ul li{
+                    width:calc((100% - 30px) / 4);
                     float: left;
                     margin-right: 10px;
                     margin-bottom: 10px;
-                    width: calc((100% - 30px) / 4);
                 }
                 .box4 ul li:nth-child(4n){
                     margin-right: 0;
                 }
+
                 .box4 ul li a{
-                    padding: 10px;
-                    background: #c78;
+                    background: #c335;
                     display: block;
+                    padding: 10px;
                 }
                 .box4 ul li img{
-                    object-fit: cover;
+                    width: 100%;
                 }
                 .box4 ul li strong{
-                    padding: 10px;
                     background: #fff;
+                    padding: 10px;
                     display: block;
-                    margin: 10px 0;
+                    margin: 10px 0; 
                 }
                 .box4 ul li p{
-                    padding: 10px;
                     background: #fff;
+                    padding: 10px;
                 }
                 footer{
-                    background: #ddd;
                     height: 150px;
+                    background: #ddd;
                 }
             </style>
             <section class="box4">
@@ -174,57 +181,57 @@
                     <li>
                         <a href="">
                             <img src="./img.jpg" alt="">
-                            <strong>제목 태그 문장 강조</strong>
-                            <p>내용 문잔 단락</p>
+                            <strong>제목 태그 문장강조</strong>
+                            <p>내용 문장 단락</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
                             <img src="./img.jpg" alt="">
-                            <strong>제목 태그 문장 강조</strong>
-                            <p>내용 문잔 단락</p>
+                            <strong>제목 태그 문장강조</strong>
+                            <p>내용 문장 단락</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
                             <img src="./img.jpg" alt="">
-                            <strong>제목 태그 문장 강조</strong>
-                            <p>내용 문잔 단락</p>
+                            <strong>제목 태그 문장강조</strong>
+                            <p>내용 문장 단락</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
                             <img src="./img.jpg" alt="">
-                            <strong>제목 태그 문장 강조</strong>
-                            <p>내용 문잔 단락</p>
+                            <strong>제목 태그 문장강조</strong>
+                            <p>내용 문장 단락</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
                             <img src="./img.jpg" alt="">
-                            <strong>제목 태그 문장 강조</strong>
-                            <p>내용 문잔 단락</p>
+                            <strong>제목 태그 문장강조</strong>
+                            <p>내용 문장 단락</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
                             <img src="./img.jpg" alt="">
-                            <strong>제목 태그 문장 강조</strong>
-                            <p>내용 문잔 단락</p>
+                            <strong>제목 태그 문장강조</strong>
+                            <p>내용 문장 단락</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
                             <img src="./img.jpg" alt="">
-                            <strong>제목 태그 문장 강조</strong>
-                            <p>내용 문잔 단락</p>
+                            <strong>제목 태그 문장강조</strong>
+                            <p>내용 문장 단락</p>
                         </a>
                     </li>
                     <li>
                         <a href="">
                             <img src="./img.jpg" alt="">
-                            <strong>제목 태그 문장 강조</strong>
-                            <p>내용 문잔 단락</p>
+                            <strong>제목 태그 문장강조</strong>
+                            <p>내용 문장 단락</p>
                         </a>
                     </li>
                 </ul>
