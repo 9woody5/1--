@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{margin: 0; padding: 0;}
+        *{margin: 0; padding: 0; font:inherit}
         body{line-height: 1;}
-        ul{list-style: none; }
-        a{text-decoration: none; color: inherit; }
+        ul{list-style: none;}
+        a{text-decoration: none; color: inherit;}
         img{vertical-align: top; max-width: 100%;}
         header{}
         header .top{
@@ -28,16 +28,10 @@
             display: block;
             height: 100%;
         }
-        header .sns{
-            position: absolute;
-            top: 0; left: 0;
-        }
-        header .login{
-            position: absolute;
-            top: 0; right: 0;
-        }
+        header .sns{float: left;}
+        header .login{float: right;}
         header .bottom{
-            background: #aaa;
+            background: #999;
             text-align: center;
         }
         header .bottom ul{
@@ -46,6 +40,7 @@
             display: inline-block;
             background: #fff;
             vertical-align: top;
+
         }
         header .bottom ul li{
             float: left;
@@ -71,10 +66,11 @@
     </header>
     <style>
         main{
-            width: 800px; margin: 10px auto;
+            width: 800px;
+            margin: 10px auto;
         }
         .sc-top{
-            background: #ccc;
+            background: #ddd;
             padding: 10px;
         }
         .sc-top .top{
@@ -94,10 +90,10 @@
         }
         .sc-top .bottom ul li{
             width:calc((100% - 20px) / 3);
+            background: #888;
             height: 100px;
-            background: #777;
-            margin-right: 10px;
             float: left;
+            margin-right: 10px;
         }
         .sc-top .bottom ul li:nth-child(3n){
             margin-right: 0;
@@ -121,7 +117,7 @@
                     <li>2</li>
                     <li>3</li>
                     <li>4</li>
-                    <li>5</li>
+                    <li>4</li>
                     <li>6</li>
                 </ul>
                 <div class="right"></div>
@@ -130,7 +126,7 @@
         <style>
             .sc-bottom{
                 margin-top: 10px;
-                background: #444;
+                background: #ddd;
                 padding: 10px;
             }
             .sc-bottom ul{}
@@ -138,19 +134,18 @@
             .sc-bottom ul li+li{
                 margin-top: 10px;
             }
-            .sc-bottom ul li a{
-                display: block;
-            }
+            .sc-bottom ul li a{}
             .sc-bottom ul li img{
-                width: 150px; height: 150px;
+                width: 150px;
+                height: 150px;
                 object-fit: cover;
                 float: left;
                 margin-right: 10px;
             }
             .sc-bottom ul li p{
-                overflow: hidden;
-                height: 150px;
                 background: #fff;
+                height: 150px;
+                overflow: hidden;
             }
         </style>
         <section class="sc-bottom">
