@@ -1,0 +1,82 @@
+@import './reset.css';
+@import './common.css';
+
+/* ctrl+j 라인 한 줄 정리 */
+header{}
+header .group-flex1{ width: 1130px; height: 160px; position: relative; margin: 0 auto; }
+
+header .logo{
+    position: absolute;
+    top: 50%;
+    left: -9px;
+    margin-top: -32px;
+}
+header .logo a{}
+header .logo a::after{
+    content: '';
+    width: 222px;
+    height: 52px;
+    display: block;
+    background-position: 0 -158px;
+}
+
+header .search-area{
+    position: absolute;
+    top: 50%;
+    left: 238px;
+    margin-top: -28px;
+}
+header .search-area .search-box{ position: relative; width: 582px; height: 52px; border: 2px solid #19ce60; /* old 브라우저에서 지원되게 하려고 작성 */ -webkit-border-radius: 2px; border-radius: 2px; }
+header .search-area .input-text{ width: 444px; height: 24px; padding: 13px 15px; margin: 1px; background-color: #fff; font-size: 18px; line-height: 24px; color: #000; font-weight: 700; outline: 0; /* 텍스트 포커스 없애는 용도 */ }
+header .search-area .btn-submit{ width: 56px; height: 56px; background: #19ce60; position: absolute; top: 0; right: 0; border-radius: 0 3px 3px 0; }
+header .search-area .btn-submit::after{
+    content: '';
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    background-position: -420px 0;
+    vertical-align: top;
+}
+header .service-area{ position: absolute; top: 12px; right: -3px; }
+header .service-area .bar{ float: left; width: 1px; height: 10px; background: #ccc; margin: 3px 7px;}
+header .service-area .link-start{float: left;}
+header .service-area .link-start::after{ content: ''; display: inline-block; width: 26px; height: 26px; vertical-align: top; background-position: -308px -345px; margin: -3px 0 0 3px; }
+header .service-area .link-junior{float: left;}
+header .service-area .link-junior::after{ content: ''; display: inline-block; width: 26px; height: 26px; vertical-align: top; width: 60px; height: 10px; background-position: -200px -330px; margin: 3px; }
+header .service-area .link-bin{float: left;}
+header .service-area .link-bin::after{ content: ''; display: inline-block; width: 34px; height: 11px; background-position: -380px -199px; margin: 3px 2px 2px; }
+header .group-flex2{ border-top: 1px solid #e4e4e4; box-shadow: 0 1px 3px 0 rgb(0 0 0 / 12%); }
+header .group-flex2 .inner{ width: 1130px; margin: 0 auto; }
+header .group-flex2 .inner::after{content: '';clear: both;display: block;}
+
+header .gnb-area{float: left;}
+header .gnb-area .gnb-list{
+    font-size: 15px;
+    font-weight: bold;
+    color: #19ce60;
+    line-height: 30px;
+    padding: 11px 0;
+}
+header .gnb-area .gnb-list::after{content: '';clear: both;display: block;}
+header .gnb-area .gnb-item{float: left;}
+header .gnb-area .gnb-item+.gnb-item{margin-left: 12px;}
+
+header .weather-area{float: right;}
+
+
+
+
+/* after는 내 영역 마지막에서 적용 */
+.container{
+    width: 1130px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+/* ctrl+shift+1 */
+.container::after{content: '';clear: both;display: block;}
+
+
+
+footer{
+
+}
