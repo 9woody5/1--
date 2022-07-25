@@ -38,7 +38,10 @@ header .service-area > a::after,
 .sc-news .group-issue .link-media::after,
 .sc-news .group-title .btn-set::after,
 header .search-area .btn-submit::after,
-.sc-sidenews .navi .btn-nav::after{
+.sc-sidenews .navi .btn-nav::after,
+.sc-themepost .btn-theme-setting::before,
+.sc-themepost .btn-theme.prev,
+.sc-themepost .btn-theme.next{
     background-image: url(../images/sp-bg.png);
     background-repeat: no-repeat;
     background-size: 457px;
