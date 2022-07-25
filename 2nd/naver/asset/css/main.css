@@ -272,52 +272,260 @@
     display: block;
     background-position: -128px -345px;
     left: -20px;
-    vertical-align: top;
+    /* vertical-align: top; */
 }
 .sc-themepost .btn-theme.next{
     display: block;
     content: '';
     background-position: -86px -345px;
     right: -20px;
-    vertical-align: top;
+    /* vertical-align: top; */
 }
 
 .sc-themepost .theme-cate-list{
     border: 1px solid #ddd;
     border-right: 0;
     height: 50px;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+    overflow: hidden;
 }
 .sc-themepost .theme-cate-list li{
     float: left;
     width:calc(100% / 8);
-    
 }
 .sc-themepost .theme-cate-list li a{
     font-size: 13px;
     font-weight: bold;
     text-align: center;
-    line-height: 49px;
+    line-height: 50px;
     border-right: 1px solid #ddd;
     display: block;
 }
 .sc-themepost .theme-cate-list li.active{
     background: #ebaa00;
     color: white;
-    vertical-align: top;
+    box-shadow: 0 3px 6px 0 rgb(0 0 0 / 16%);
 }
 
-.sc-themepost .group-theme.list1{}
-.sc-themepost .list1-inner{}
-.sc-themepost .list1-inner .list1-thumb{}
-.sc-themepost .list1-inner .list1-info{}
-.sc-themepost .list1-inner .category{}
-.sc-themepost .list1-inner .title{}
-.sc-themepost .list1-inner .txt{}
-.sc-themepost .list1-inner .source-area{}
-.sc-themepost .list1-inner .source{}
+.sc-themepost .group-theme.list1{
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+.sc-themepost .list1-inner{
+    float: left;
+    width:calc((100% - 20px) /2);
+    overflow: hidden;
+}
+.sc-themepost .list1-inner:first-child{
+    margin-right: 20px;
+}
+.sc-themepost .list1-inner:hover img{
+    transform: scale(1.1);
+}
+.sc-themepost .list1-inner .list1-thumb{
+    position: relative;
+    overflow: hidden;
+    display: block;
+    border: 1px solid #dae1e6;
+}
+/* 이미지 사이즈 조정 시 흔들림 어떻게 잡는지? */
+.sc-themepost .list1-thumb img{
+    width: 100%;
+    vertical-align: top;
+    transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1);
+}
+.sc-themepost .list1-thumb .ic-play{
+    position: absolute;
+    bottom: 10px;left: 12px;
+    display: inline-block;
+    width: 24px;
+    height: 28px;
+    background-position: 0 -389px;
+}
+.sc-themepost .list1-info{
+    padding-top: 15px;
+    display: block;
+}
+.sc-themepost .list1-info .category{
+    color: #ebaa00;
+    font-weight: 700;
+}
+.sc-themepost .list1-info .title{
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
+}
+.sc-themepost .list1-info .title:hover{
+    text-decoration: underline;
+}
+.sc-themepost .list1-info .txt{
+    display: block;
+    margin-top: 6px;
+    line-height: 19px;
+    font-size: 13px;
+}
+.sc-themepost .list1-info .source-area{
+    color: #505050;
+    margin-top: 4px;
+}
+.sc-themepost .list1-info .source{}
 
-.sc-themepost .group-theme.list2{}
-.sc-themepost .recipe-list{}
+.sc-themepost .group-theme.list2{
+    padding:18px 0;
+    border-bottom: 1px solid #dae1e6;
+}
+.sc-themepost .recipe-list{
+    overflow: hidden;
+}
 .sc-themepost .recipe-list .recipe-item{}
-.sc-themepost .recipe-list .recipe-item{}
+.sc-themepost .recipe-list .recipe-item:hover img{
+    transform: scale(1.1);
+}
+.sc-themepost .recipe-list .recipe-item+.recipe-item{
+    margin-top: 28px;
+}
+.sc-themepost .recipe-list .recipe-thumb{
+    width: 170px; 
+    height: 114px;
+    float: left;
+    margin-right: 20px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+}
+.sc-themepost .recipe-list .recipe-thumb img{
+    width: 100%;
+    vertical-align: top;
+    transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1);
+}
+.sc-themepost .recipe-list .recipe-thumb::after{
+    content: '';
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    bottom: 0; 
+    right: 0;
+    border: 1px solid #dae1e6;
+}
+.sc-themepost .recipe-list .recipe-info{
+    display: block;
+    padding: 4px 25px 0 0;
+}
+.sc-themepost .recipe-list .category{
+    color: #ebaa00;
+    font-weight: 700;
+}
+.sc-themepost .recipe-list .title{
+    display: block;
+    margin-top: 2px;
+    font-size: 13px;
+}
+.sc-themepost .recipe-list .title:hover{
+    text-decoration: underline;
+}
+.sc-themepost .recipe-list .txt{
+    line-height: 20px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    max-height: 40px;
+    overflow: hidden;
+    margin-top: 6px;
+    font-size: 13px;
+}
+.sc-themepost .recipe-list .source-area{
+    color: #505050;
+    margin-top: 4px;
+}
+.sc-themepost .recipe-list .source{}
+.sc-themepost .recipe-list .source::after{
+    content: '';
+    display: inline-block;
+    vertical-align: 3px;
+    border-radius: 50%;
+    margin: 0 5px 0 6px;
+    width: 2px;
+    height: 2px;
+    background-color: #505050;
+}
+.sc-themepost .recipe-list .date{
+    margin-left: -2px;
+    color: grey;
+}
+.sc-themepost .group-theme.list3{
+    padding: 18px 0;
+    border-bottom: 1px solid #dae1e6;
+}
+.sc-themepost .list3 .list3-list{
+    overflow: hidden;
+}
+.sc-themepost .list3 .list3-item{
+    float: left;
+    width:calc((100% - 54px) / 3);
+}
+.sc-themepost .list3 .list3-item:hover img{
+    transform: scale(1.1);
+}
+.sc-themepost .list3 .list3-item:last-child{
+    margin-right: 0;
+}
+.sc-themepost .list3 .list3-item+.list3-item{
+    margin-left: 27px;
+}
+.sc-themepost .list3 .list3-thumb{
+    width: 232px;
+    height: 130px;
+    overflow: hidden;
+    display: block;
+    position: relative;
+}
+.sc-themepost .list3 .list3-thumb .ic-play{
+    position: absolute;
+    bottom: 9px; left: 12px;
+    background-position: 0 -389px;
+    width: 24px;
+    height: 28px;
+}
+.sc-themepost .list3 .list3-thumb::after{
+    content: '';
+    border: 1px solid #dae1e6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.sc-themepost .list3 .list3-thumb img{
+    transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1);
+}
+.sc-themepost .list3 .list3-info{
+    padding-top: 12px;
+    display: block;
+}
+.sc-themepost .list3 .title{
+    display: block;
+    margin-top: 2px;
+    font-size: 13px;
+}
+.sc-themepost .list3 .title:hover{
+    text-decoration: underline;
+}
+.sc-themepost .list3 .source-area{
+    color: #505050;
+    margin-top: 4px;
+}
+.sc-themepost .list3 .source{}
+.sc-themepost .list3 .source::after{
+    content: '';
+    display: inline-block;
+    vertical-align: 3px;
+    border-radius: 50%;
+    margin: 0 5px 0 6px;
+    width: 2px;
+    height: 2px;
+    background-color: #505050;
+}
+.sc-themepost .list3 .date{
+    margin-left: -3px;
+}

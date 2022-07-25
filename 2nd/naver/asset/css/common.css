@@ -41,7 +41,9 @@ header .search-area .btn-submit::after,
 .sc-sidenews .navi .btn-nav::after,
 .sc-themepost .btn-theme-setting::before,
 .sc-themepost .btn-theme.prev,
-.sc-themepost .btn-theme.next{
+.sc-themepost .btn-theme.next,
+.sc-themepost .list1-thumb .ic-play,
+.sc-themepost .list3 .list3-thumb .ic-play{
     background-image: url(../images/sp-bg.png);
     background-repeat: no-repeat;
     background-size: 457px;
