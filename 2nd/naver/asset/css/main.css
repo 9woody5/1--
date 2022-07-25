@@ -453,7 +453,7 @@
     margin-left: -2px;
     color: grey;
 }
-.sc-themepost .group-theme.list3{
+.sc-themepost .group-theme.list3.video{
     padding: 18px 0;
     border-bottom: 1px solid #dae1e6;
 }
@@ -528,4 +528,83 @@
 }
 .sc-themepost .list3 .date{
     margin-left: -3px;
+}
+
+.sc-themepost .list3 .list3-title{
+    padding-top: 24px;
+    font-size: 15px;
+    color: #000;
+    font-weight: bold;
+    position: relative;
+}
+.sc-themepost .list3 .fund-hd{
+    position: relative;
+    display: block;
+    font-size: 14px;
+}
+.sc-themepost .list3 .fund-hd:hover{
+    text-decoration: underline;
+}
+.sc-themepost .list3 .fund-hd::after{
+    content: '';
+    display: inline-block;
+    background-position: -444px -304px;
+    width: 7px;
+    height: 11px;
+}
+.sc-themepost .list3 .fund-list{
+    padding: 18px 0 18px;
+    overflow: hidden;
+}
+.sc-themepost .list3 .fund-item{
+    float: left;
+    width:calc((100% - 54px) / 3);
+    margin-right: 27px;
+}
+.sc-themepost .list3 .fund-item:hover img{
+    transform: scale(1.1);
+}
+.sc-themepost .list3 .fund-item:last-child{margin-right: 0;}
+.sc-themepost .list3 .thumb-wrap{
+    position: relative;
+    display: block;
+    width: 232px;
+    height: 130px;
+    overflow: hidden;
+}
+.sc-themepost .list3 .thumb-wrap img{
+    transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1);
+}
+.sc-themepost .list3 .thumb-wrap::after{
+    content: '';
+    border: 1px solid #dae1e6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.sc-themepost .list3 .fund-item .ybox{
+    background: #ebaa00;
+    color: white;
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    height: 30px;
+    padding: 0 10px;
+    line-height: 30px;
+}
+.sc-themepost .list3 .fund-item .title{
+    padding-top: 12px;
+}
+.sc-themepost .list3 .fund-item .source-area{
+    margin-top: 7px;
+}
+.sc-themepost .list3 .fund-item .txt{
+    margin-left: -3px;
+}
+.sc-themepost .list3 .percent{
+    color:#ebaa00;
+    font-weight: 700;
 }
