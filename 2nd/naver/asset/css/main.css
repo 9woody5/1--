@@ -11,7 +11,6 @@
     background-color: #f7f9fa;
     border: 1px solid #dae1e6;
 }
-
 .sc-login .login-msg{
     padding-left: 3px;
     color: grey;
@@ -29,7 +28,16 @@
     font-weight: 700;
     text-align: center;
 }
-/* .sc-login .link-login::before{} */
+.sc-login .link-login::before{
+    content: '';
+    display: inline-block;
+    background-position: -138px -330px;
+    width: 60px;
+    height: 12px;
+    vertical-align: top;
+    margin: 2px 3px 0 0;
+    
+}
 
 .sc-login .sub-area{
     margin: 14px 8px 0 4px;
@@ -74,7 +82,7 @@
     display: inline-block;
     width: 6px;
     height: 9px;
-    background-position: -408px -63px;
+    background-position: -408px -74px;
     background-repeat: no-repeat;
     vertical-align: top;
     margin: 7px 8px 6px;
@@ -85,7 +93,7 @@
     display: inline-block;
     width: 6px;
     height: 9px;
-    background-position: -408px -63px;
+    background-position: -451px -392px;
     background-repeat: no-repeat;
     vertical-align: top;
     margin: 7px 8px 6px;
@@ -649,6 +657,5 @@
     background-position: 0 -345px;
     width: 42px;
     height: 42px;
-    vertical-align: top;
     margin: 0 auto 3px;
 }
