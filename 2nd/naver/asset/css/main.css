@@ -673,19 +673,22 @@
     line-height: 17px;
     font-weight: bold;
 }
-/* .sc-shop .trend-shop::before{
+.sc-shop .trend-shop::before{
     content: '';
     display: inline-block;
     background-position: -26px -54px;
     width: 15px;
     height: 15px;
+    vertical-align: -3px;
+    margin-right: 4px;
 }
 .sc-shop .trend-shop::after{
     content: '';
     display: inline-block;
-    width: 5px;height: 9px;
-    background-position: -65px -77px;
-} */
+    width: 5px; height: 9px;
+    background-position: -43px -54px;
+    margin-left: 7px;
+}
 .sc-shop .tab-area{
     float: right;
 }
@@ -735,4 +738,255 @@
 }
 .sc-shop .group-mall .dot.dot02{
     margin: 10px 10px 0;
+}
+.sc-shop .group-goods{
+    /* margin: 0 8px; */
+    position: relative;
+    padding: 55px 8px 20px;
+}
+
+.sc-shop .btn-area.top{
+    position: absolute;
+    top: 13px;
+    right: 8px;
+    overflow: hidden;
+}
+.sc-shop .btn-area .page{
+    float: left;
+    color: grey;
+    line-height: 29px;
+}
+.sc-shop .btn-area .current{
+    color: #202020;
+    font-weight: 700;
+}
+.sc-shop .btn-area .total{}
+
+.sc-shop .group-goods .navi{
+    overflow: hidden;
+    float: left;
+    margin-left: 7px;
+}
+.sc-shop .group-goods .top .btn{
+    border: 1px solid #dae1e6;;
+    float: left;
+    width: 29px;
+    height: 29px;
+}
+.sc-shop .group-goods .btn.prev{
+    margin-right: -1px;
+}
+.sc-shop .group-goods .btn.prev::before{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background-position: -71px -54px;
+    margin: 10px 12px;
+}
+.sc-shop .group-goods .btn.next{}
+.sc-shop .group-goods .btn.next::before{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background-position: -57px -54px;
+    margin: 10px 12px;
+}
+
+.sc-shop .goods-list{
+    position: relative;
+    overflow: hidden;
+    margin-right: -5px;
+    margin-top: -10px;
+}
+.sc-shop .goods-list .goods-item{
+    float: left;
+    width: calc(100% / 3);
+    margin-top: 10px;
+}
+.sc-shop .goods-list .thumb{
+    margin-right: 5px;
+    border: 1px solid #dae1e6;
+    overflow: hidden;
+}
+.sc-shop .goods-list .thumb img{
+    transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1);
+}
+.sc-shop .goods-list .txt{
+    text-align: center;
+    margin-top: 5px;
+}
+.sc-shop .goods-list .txt:hover{
+    text-decoration: underline;
+}
+.sc-shop .goods-list .goods-item:hover img{
+    transform: scale(1.05);
+}
+.sc-shop .goods-list .title{
+    display: block;
+    font-weight: 700;
+}
+.sc-shop .goods-list .dsc{
+    display: block;
+}
+.sc-shop .btn-area{
+    display: inline-block;
+}
+/* text-align:center 적용 왜 안 되는지... */
+.sc-shop .btn-area.bottom{
+    margin-top: 20px;
+    text-align: center;
+}
+.sc-shop .btn-area.bottom .btn{
+    float: left;
+    width: 29px;
+    height: 29px;
+    border: 1px solid #dae1e6;
+}
+.sc-shop .btn-area.bottom .btn.prev{
+
+}
+.sc-shop .btn-area.bottom .page{
+    margin: 0 20px;
+}
+.sc-shop .btn-area.bottom .btn.next{}
+
+.sc-shop .group-shopnews{
+    padding: 19px 0 17px;
+    margin: 0 8px;
+    border-top: 1px solid #dae1e6;
+}
+.sc-shop .group-shopnews .shopnews-hd{
+    position: relative;
+    padding-left: 5px;
+}
+.sc-shop .shopnews-hd{
+    padding-bottom: 5px;
+}
+.sc-shop .shopnews-hd .title{
+    font-size: 13px;
+    font-weight: bold;
+}
+.sc-shop .shopnews-hd .btn-area{
+    position: absolute;
+    top: -6px;
+    right: 0;
+}
+.sc-shop .shopnews-hd .navi{
+    float: left;
+    overflow: hidden;
+    margin-left: 7px;
+}
+.sc-shop .shopnews-hd .navi a{
+    float: left;
+    width: 29px;
+    height: 29px;
+    border: 1px solid #dae1e6;
+    box-sizing: border-box;
+}
+.sc-shop .shopnews-hd .btn.prev{
+    margin-right: -1px;
+}
+.sc-shop .shopnews-hd .prev::before{
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 9px;
+    background-position: -71px -54px;
+    margin: 10px 12px;
+}
+.sc-shop .shopnews-hd .next{}
+.sc-shop .shopnews-hd .next::before{}
+
+.sc-shop .group-shopnews .news-list{
+    margin: 13px 5px 0;
+    line-height: 28px;
+}
+.sc-shop .group-shopnews .news-list li a::before{
+    content: '';
+    width: 4px;
+    height: 4px;
+    display: inline-block;
+    background-color: #1ace61;
+    border-radius: 50%;
+    margin-right: 8px;
+    vertical-align: 2px;
+}
+.sc-shop .group-shopnews .news-list li{
+    display: block;
+}
+.sc-shop .group-shopnews .news-list li:hover{
+    text-decoration: underline;
+}
+.sc-shop .group-shopnews .title{
+    font-weight: bold;
+    color: #202020;
+    margin-right: 13px;
+}
+.sc-shop .group-shopnews .txt{
+    color: #202020;
+}
+.sc-shop .group-cate{
+    position: relative;
+    padding: 55px 0 19px;
+    margin: 0 8px;
+    border-top: 1px solid #c9cccf;
+    overflow: hidden;
+}
+.sc-shop .group-cate .cate-area{
+    position: absolute;
+    top: 20px;
+    left: 5px;
+}
+.sc-shop .group-cate .cate-area a{
+    display: inline-block;
+    font-size: 13px;
+    line-height: 17px;
+    font-weight: 500;
+}
+.sc-shop .group-cate .cate-area a+a{
+    margin-left: 12px;
+}
+.sc-shop .group-cate .cate-area a.on{
+    color: #03c75a;
+    font-weight: 700;
+    border-bottom: 2px solid #19ce60;
+}
+.sc-shop .group-cate .btn-area{
+    position: absolute;
+    top: 14px;
+    right: 0;
+}
+.sc-shop .group-cate .navi{}
+.sc-shop .group-cate .navi a{}
+.sc-shop .group-cate .navi .prev{}
+.sc-shop .group-cate .navi .next{}
+
+.sc-shop .group-cate .cate-box{
+    overflow: hidden;
+    margin-right: -5px;
+}
+.sc-shop .group-cate .cate-box li{
+    float: left;
+    width: 50%;
+}
+.sc-shop .group-cate .cate-box li:hover{
+    text-decoration: underline;
+}
+/* 정렬할 때 a태그에 display:block 필수 */
+.sc-shop .group-cate .cate-box li a{
+    display: block;
+    margin-right: 5px;
+}
+.sc-shop .group-cate .cate-box .thumb{
+    border: 1px solid #c9cccf;
+    box-sizing: border-box;
+}
+.sc-shop .group-cate .cate-box .txt{
+    display: block;
+    text-align: center;
+    line-height: 16px;
+    font-weight: 700;
+    margin-top: 9px;
 }

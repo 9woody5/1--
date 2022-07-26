@@ -47,13 +47,19 @@ header .search-area .btn-submit::after,
 .sc-themepost .list3 .fund-hd::after,
 .sc-themepost .list3 .fund-list .btn-next::after,
 .sc-themepost .btn-more .ico-more::before,
-.sc-login .link-login::before,
-.sc-shop .trend-shop::before{
+.sc-login .link-login::before{
     background-image: url(../images/sp-bg.png);
     background-repeat: no-repeat;
     background-size: 457px;
 }
 
 
-
 /* 식당 2호점 */
+.sc-shop .group-goods .btn::before,
+.sc-shop .trend-shop::before,
+.sc-shop .trend-shop::after,
+.sc-shop .shopnews .prev::before{
+    background-image: url(../images/sp-bg2.png);
+    background-repeat: no-repeat;
+    background-size: 107px;
+}
