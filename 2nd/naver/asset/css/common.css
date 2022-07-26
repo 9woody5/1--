@@ -47,7 +47,8 @@ header .search-area .btn-submit::after,
 .sc-themepost .list3 .fund-hd::after,
 .sc-themepost .list3 .fund-list .btn-next::after,
 .sc-themepost .btn-more .ico-more::before,
-.sc-login .link-login::before{
+.sc-login .link-login::before,
+footer .notice-area .more::after{
     background-image: url(../images/sp-bg.png);
     background-repeat: no-repeat;
     background-size: 457px;

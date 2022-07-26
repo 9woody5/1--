@@ -1084,6 +1084,9 @@
     float: left;
     margin-bottom: 10px;
 }
+.sc-shop .group-plusdeal .deal-list li:hover{
+    text-decoration: underline;
+}
 .sc-shop .group-plusdeal .deal-list .thumb-box{
     position: relative;
     float: left;
@@ -1112,3 +1115,241 @@
     color: #f04045;
 }
 .sc-shop .group-plusdeal .deal-list .price{}
+
+footer{
+    background-color: #fafbfc;
+    border-top: 1px solid #e4e8eb;
+}
+footer .inner{
+    width: 1130px;
+    padding: 0 30px 82px;
+    margin: 0 auto;
+}
+footer .banner-area{
+    padding: 24px 0;
+    border-bottom: 1px solid #e4e8eb;
+}
+footer .banner-list{
+    overflow: hidden;
+}
+footer .banner-list li{
+    float: left;
+    width: 350px;
+    height: 86px;
+    margin-left: 40px;
+}
+footer .banner-list li:hover img{
+    transform: scale(1.05);
+}
+footer .banner-list li:hover strong{
+    text-decoration: underline;
+}
+footer .banner-list li:first-child{
+    margin-left: 0;
+}
+footer .banner-list a{
+    overflow: hidden;
+    display: block;
+}
+footer .banner-list .thumb{
+    float: left;
+    position: relative;
+    overflow: hidden;
+    width: 160px;
+    height: 86px;
+}
+footer .banner-list .thumb img{
+    width: 160px;
+    height: 86px;
+    transition: transform .2s cubic-bezier(.165,.84,.44,1),-webkit-transform .2s cubic-bezier(.165,.84,.44,1);
+}
+footer .banner-list .txt-area{
+    overflow: hidden;
+    height: 86px;
+    padding: 2px 2px 0 16px;
+    font-size: 12px;
+}
+footer .banner-list .txt-area .title{
+    font-weight: 700;
+    color: #58c464;
+    display: block;
+}
+footer .banner-list .txt-area strong{
+    display: block;
+    color: #242424;
+    margin-top: 6px;
+    font-weight: 700;
+}
+footer .banner-list .txt-area p{
+    line-height: 18px;
+    color: #424242;
+    margin-top: 8px;
+}
+
+footer .notice-area{
+    padding: 16px 0 15px;
+    border-bottom: 1px solid #e4e8eb;
+    overflow: hidden;
+}
+footer .notice-area .notice-box{
+    float: left;
+}
+footer .notice-area ul{}
+footer .notice-area ul li{}
+footer .notice-area .title{
+    font-weight: 700;
+}
+footer .notice-area .title:hover{
+    text-decoration: underline;
+}
+footer .notice-area .more{
+    float: right;
+    font-weight: 700;
+}
+footer .notice-area .more:hover{
+    text-decoration: underline;
+}
+footer .notice-area .more::after{
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 12px;
+    background-position: -444px -268px;
+    vertical-align: -2px;
+    margin-left: 7px;
+}
+
+footer .aside-area{
+    overflow: hidden;
+    border-bottom: 1px solid #e4e8eb;
+}
+footer .aside-area ul{
+    float: left;
+    width: 780px;
+    padding: 20px 0;
+}
+footer .aside-area ul li{
+    line-height: 16px;
+    margin-bottom: 8px;
+}
+footer .aside-area ul li:last-child{
+    margin-bottom: 0;
+}
+footer .aside-area ul h3{
+    float: left;
+    font-weight: 700;
+    width: 87px;
+}
+footer .aside-area ul .link-item{
+    color: #777;
+    line-height: 16px;
+    font-size: 12px;
+}
+footer .aside-area ul a{}
+footer .aside-area ul a:hover{
+    text-decoration: underline;
+}
+footer .aside-area ul a.on::before{
+    content: '';
+    display: inline-block;
+    margin: 0 8px;
+    width: 1px;
+    height: 11px;
+    background: #e4e8eb;
+}
+footer .aside-area .service-box{
+    float: right;
+    width: 350px;
+    padding: 28px 0;
+    overflow: hidden;
+}
+footer .aside-area .service-box img{
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+}
+footer .aside-area .box-left{
+    float: left;
+    overflow: hidden;
+}
+footer .aside-area .box-left .logo{
+    float: left;
+}
+footer .aside-area .box-left a{}
+footer .aside-area .box-left .whale-info{
+    overflow: hidden;
+    float: left;
+    margin-right: 15px;
+}
+footer .aside-area .box-left strong{
+    display: block;
+    font-weight: 700;
+    padding-top: 3px;
+}
+footer .aside-area .box-left .link{
+    display: block;
+    margin-top: 3px;
+    color: grey;
+}
+footer .aside-area .link:hover{
+    text-decoration: underline;
+}
+footer .aside-area .box-right{
+    float: left;
+    overflow: hidden;
+    margin-left: 50px;
+}
+footer .aside-area .box-right .logo{
+    overflow: hidden;
+    float: left;
+}
+footer .aside-area .box-right a{}
+footer .aside-area .box-right .project-info{
+    overflow: hidden;
+    float: left;
+    margin-right: 15px;
+}
+footer .aside-area .box-right strong{
+    display: block;
+    font-weight: 700;
+    padding-top: 3px;
+}
+footer .aside-area .box-right .link{
+    display: block;
+    margin-top: 3px;
+    color: grey;
+}
+
+footer .corp-area{
+    padding-top: 25px;
+}
+footer .corp-area .corp-list{
+    overflow: hidden;
+    float: left;
+    margin-right: 13px;
+}
+footer .corp-area .corp-list li{
+    float: left;
+    color: #777;
+}
+footer .corp-area .corp-list li:hover{
+    text-decoration: underline;
+}
+footer .corp-area .corp-list li .on{
+    font-weight: 700;
+}
+footer .corp-area .corp-list li+li::before{
+    content: '';
+    display: inline-block;
+    width: 1px;
+    height: 11px;
+    background-color: #e4e8eb;
+    margin: 0 8px;
+    vertical-align: -1px;
+}
+footer .corp-area .addr{
+    font-weight: 700;
+}
+footer .corp-area .addr:hover{
+    text-decoration: underline;
+}
