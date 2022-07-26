@@ -58,7 +58,11 @@ header .search-area .btn-submit::after,
 .sc-shop .group-goods .btn::before,
 .sc-shop .trend-shop::before,
 .sc-shop .trend-shop::after,
-.sc-shop .shopnews .prev::before{
+.sc-shop .shopnews .prev::before,
+.sc-shop .group-cate .navi .prev::after,
+.sc-shop .group-cate .navi .next::after,
+.sc-shop .plusdeal-hd .prev::after,
+.sc-shop .plusdeal-hd .next::after{
     background-image: url(../images/sp-bg2.png);
     background-repeat: no-repeat;
     background-size: 107px;
